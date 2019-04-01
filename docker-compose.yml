@@ -13,6 +13,8 @@ services:
       MYSQL_DATABASE: ponto_eletronico_db
     volumes:
       - db-data:/var/lib/mysql 
+    ports:
+      - 3306:3306
 
   adminer:
     image: adminer
